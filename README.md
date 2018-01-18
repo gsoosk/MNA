@@ -24,4 +24,4 @@ open "question3.md" and run script. Then you should enter circiut components in 
 - OP node+  node-  outNode gain
 
 
-* Please read work report to know what to do exactly !
+Please read work report to know what to do exactly !
