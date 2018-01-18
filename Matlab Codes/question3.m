@@ -5,7 +5,7 @@ b = [] ;
 N  = input('How many nodes?') ;
 G(N,N) = 0;
 b(N,1) = 0;
-C = input('How many commands?');
+C = input('How many components?');
 w = input('w?');
 for i = drange(1:C)
     strIn = input('','s');
@@ -37,6 +37,14 @@ for i = drange(1:C)
     
      
 end
+gSparse = sparse(G);
+[L,U,P,Q] = lu(gSparse);
+z = L\(P*b);
+y = U\z;
+x = Q*y;
+
+disp(x);
+
 
 
 
